@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram • Recuperar senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="simple-center">
+      <article class="auth-card auth-card--wide">
+        <h1 class="brand">Instagram</h1>
+        <h2 class="section-title">Problemas para entrar?</h2>
+        <p class="muted">Digite seu email ou usuário e enviaremos um link para voltar ao acesso.</p>
+
+        <form id="forgotForm" class="auth-form" novalidate>
+          <label class="field-label">
+            <span>Email, telefone ou usuário</span>
+            <input id="forgotIdentifier" type="text" required />
+          </label>
+
+          <button type="submit" class="btn-primary">Enviar link de acesso</button>
+          <p id="forgotFeedback" class="feedback" role="status"></p>
+        </form>
+
+        <a class="link-small" href="index.html">Voltar para o login</a>
+      </article>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

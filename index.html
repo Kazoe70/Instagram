@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram • Entrar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="phone-preview" aria-hidden="true">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img id="previewImage" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=520&q=80" alt="Prévia do Instagram" />
+            <div class="preview-overlay">
+              <span class="live-dot"></span>
+              Stories em destaque
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="auth-card-wrap">
+        <article class="auth-card">
+          <h1 class="brand" aria-label="Instagram">Instagram</h1>
+          <form id="loginForm" class="auth-form" novalidate>
+            <label class="field-label">
+              <span>Telefone, nome de usuário ou email</span>
+              <input
+                id="loginIdentifier"
+                name="identifier"
+                type="text"
+                autocomplete="username"
+                required
+              />
+            </label>
+
+            <label class="field-label">
+              <span>Senha</span>
+              <input
+                id="loginPassword"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                minlength="6"
+                required
+              />
+            </label>
+
+            <button type="submit" class="btn-primary">Entrar</button>
+            <p id="loginFeedback" class="feedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="divider"><span>ou</span></div>
+
+          <p class="social-login" aria-label="Entrar com o Facebook">
+            <strong>Entrar com o Facebook</strong>
+          </p>
+          <a class="link-small" href="forgot.html">Esqueceu a senha?</a>
+        </article>
+
+        <article class="auth-card auth-card--secondary">
+          <p>Não tem uma conta? <a href="signup.html">Cadastre-se</a></p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="about.html">Meta</a>
+        <a href="about.html#sobre">Sobre</a>
+        <a href="about.html#ajuda">Ajuda</a>
+        <a href="about.html#privacidade">Privacidade</a>
+      </nav>
+      <small>© 2026 Instagram from Meta</small>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

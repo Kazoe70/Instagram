@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram • Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="simple-center">
+      <article class="auth-card auth-card--wide">
+        <h1 class="brand">Instagram</h1>
+        <p class="muted">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+
+        <form id="signupForm" class="auth-form" novalidate>
+          <label class="field-label">
+            <span>Email</span>
+            <input id="signupEmail" type="email" required />
+          </label>
+
+          <label class="field-label">
+            <span>Nome completo</span>
+            <input id="signupName" type="text" minlength="3" required />
+          </label>
+
+          <label class="field-label">
+            <span>Nome de usuário</span>
+            <input id="signupUser" type="text" minlength="3" required />
+          </label>
+
+          <label class="field-label">
+            <span>Senha</span>
+            <input id="signupPassword" type="password" minlength="6" required />
+          </label>
+
+          <button type="submit" class="btn-primary">Cadastrar</button>
+          <p id="signupFeedback" class="feedback" role="status"></p>
+        </form>
+      </article>
+
+      <article class="auth-card auth-card--secondary">
+        <p>Tem uma conta? <a href="index.html">Conecte-se</a></p>
+      </article>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
